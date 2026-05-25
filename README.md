@@ -1,26 +1,30 @@
 # Regex Check
 
-Mala Next.js aplikacija za live proveru regex-a.
+This repository contains a small Next.js app that performs live regex checks on text input.
 
-## Šta radi
+![App screenshot](public/regexcheck.webp)
 
-- prima regex u prvom polju
-- otključava drugi input tek kada je regex unet
-- proverava tekst na svaku izmenu
-- prikazuje da li tekst prolazi check
-- za prazan unos prikazuje `prazan string`
-- responsive je za mobilni, tablet i desktop
+## What it does
 
-## Pokretanje
+- Accepts a regular expression in the first input
+- Unlocks the second text input only after a regex is provided
+- Re-evaluates the text on every change and shows a live pass/fail status
+- Shows `empty string` when the input is empty
+- Responsive UI for mobile, tablet and desktop
+- Language toggle (ENG / SRB) in the header
+
+## Run locally
+
+Install dependencies and start the dev server:
 
 ```bash
 npm install
 npm run dev
 ```
 
-Otvori [http://localhost:3000](http://localhost:3000).
+Open http://localhost:3000 in your browser.
 
-## Produkcijski build
+## Production build
 
 ```bash
 npm run build
@@ -34,6 +38,9 @@ npm start
 - TypeScript
 - Tailwind CSS v4
 
-## Napomena
 
-Aplikacija radi kao full-string match, što znači da regex mora da odgovara celom tekstu, ne samo delu unosa.
+## Notes
+
+- The app uses full-string matching by default (the regex is wrapped with anchors in the client code).
+
+---
