@@ -2,9 +2,9 @@
 
 This repository contains a small Next.js app that performs live regex checks on text input.
 
-![App screenshot](public/regexcheck.webp)
+## [Live Demo](https://regexcheck.vercel.app/)
 
-[Live Demo](https://regexcheck.vercel.app/)
+![App screenshot](public/regexcheck.webp)
 
 ## What it does
 
