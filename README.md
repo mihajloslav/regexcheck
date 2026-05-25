@@ -4,6 +4,8 @@ This repository contains a small Next.js app that performs live regex checks on 
 
 ![App screenshot](public/regexcheck.webp)
 
+[Live Demo](https://regexcheck.vercel.app/)
+
 ## What it does
 
 - Accepts a regular expression in the first input
